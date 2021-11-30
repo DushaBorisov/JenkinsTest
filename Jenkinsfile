@@ -2,6 +2,17 @@ pipeline{
     agent any
 
     stages {
-        git
+        stage('One'){
+            steps {
+                echo "First stage"
+            }
+        }
+
+        stage('Two'){
+            steps{
+                echo "Second stage"
+            }
+
+        }
     }
 }
